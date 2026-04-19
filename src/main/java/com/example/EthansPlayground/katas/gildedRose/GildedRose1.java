@@ -17,17 +17,10 @@ class GildedRose1 extends GildedRose {
 
     private void processItem(Item item) {
         switch (item.name) {
-            case SPECIAL_SULFURAS:
-                return;
-            case SPECIAL_AGED_BRIE:
-                processAgedItem(item);
-                break;
-            case SPECIAL_BACKSTAGE_PASS:
-                processBackstagePass(item);
-                break;
-            default:
-                processDefaultItem(item);
-                break;
+            case SPECIAL_SULFURAS -> {}
+            case SPECIAL_AGED_BRIE -> processAgedItem(item);
+            case SPECIAL_BACKSTAGE_PASS -> processBackstagePass(item);
+            default -> processDefaultItem(item);
         }
     }
 

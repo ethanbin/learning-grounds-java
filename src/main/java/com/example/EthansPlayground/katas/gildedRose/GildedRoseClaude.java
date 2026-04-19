@@ -1,10 +1,8 @@
 package com.example.EthansPlayground.katas.gildedRose;
 
-class GildedRoseClaude {
-  private final Item[] items;
-
+class GildedRoseClaude extends GildedRose {
   public GildedRoseClaude(Item[] items) {
-    this.items = items;
+      super(items);
   }
 
   public void updateQuality() {
