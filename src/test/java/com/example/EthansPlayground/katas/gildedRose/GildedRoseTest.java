@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedRoseTest {
   public GildedRose getGildedRose(Item[] items) {
-    return new GildedRoseClaude(items);
+    return new GildedRose2(items);
   }
 
   @Test
