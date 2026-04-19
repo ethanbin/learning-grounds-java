@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedRoseTest {
-  public GildedRose getGuildedRose(Item[] items) {
+  public GildedRose getGildedRose(Item[] items) {
     return new GildedRose1(items);
   }
 
@@ -15,7 +15,7 @@ class GildedRoseTest {
       new Item("Vest", 10, 20)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
 
     gildedRose.updateQuality();
     compareItems(items, new Item("Vest", 9, 19));
@@ -27,7 +27,7 @@ class GildedRoseTest {
       new Item("Vest", 10, 20)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
 
     gildedRose.updateQuality();
     gildedRose.updateQuality();
@@ -40,7 +40,7 @@ class GildedRoseTest {
       new Item("Aged Brie", 10, 20)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
 
     gildedRose.updateQuality();
     gildedRose.updateQuality();
@@ -53,7 +53,7 @@ class GildedRoseTest {
       new Item("Aged Brie", 0, 20)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
 
     gildedRose.updateQuality();
     compareItems(items, new Item("Aged Brie", -1, 22));
@@ -65,7 +65,7 @@ class GildedRoseTest {
       new Item("Vest", 10, 0)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     gildedRose.updateQuality();
     gildedRose.updateQuality();
     compareItems(items, new Item("Vest", 8, 0));
@@ -77,7 +77,7 @@ class GildedRoseTest {
       new Item("Aged Brie", 10, 50)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     gildedRose.updateQuality();
     gildedRose.updateQuality();
     compareItems(items, new Item("Aged Brie", 8, 50));
@@ -89,7 +89,7 @@ class GildedRoseTest {
       new Item("Vest", 1, 10)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     gildedRose.updateQuality();
     gildedRose.updateQuality();
     compareItems(items, new Item("Vest", -1, 7));
@@ -102,7 +102,7 @@ class GildedRoseTest {
       new Item(itemName, 6, 10)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     gildedRose.updateQuality();
     compareItems(items, new Item(itemName, 5, 12));
 
@@ -121,7 +121,7 @@ class GildedRoseTest {
       new Item("Sulfuras, Hand of Ragnaros", 10, 80)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     gildedRose.updateQuality();
     compareItems(items, new Item("Sulfuras, Hand of Ragnaros", 10, 80));
   }
@@ -142,7 +142,7 @@ class GildedRoseTest {
       new Item("Aged Brie", 0, 16)
     };
 
-    GildedRose gildedRose = getGuildedRose(items);
+    GildedRose gildedRose = getGildedRose(items);
     for (int i = 0; i < 6; i++) {
       gildedRose.updateQuality();
     }
@@ -173,7 +173,7 @@ class GildedRoseTest {
       // this conjured item does not work properly yet
       new Item("Conjured Mana Cake", 3, 6)};
 
-    GildedRose app = getGuildedRose(items);
+    GildedRose app = getGildedRose(items);
 
     int days = 2;
 
