@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BowlingGameTest {
   public BowlingGame getBowlingGame() {
-    return new BowlingGame();
+    return null;
   }
 
   @Test
